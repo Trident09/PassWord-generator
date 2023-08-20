@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html
+	lang="en"
+	dir="ltr"
+>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="ie=edge"
+		/>
+		<title>PASS GEN</title>
+		<meta
+			name="author"
+			content="Rupam Barui"
+		/>
+		<meta
+			name="description"
+			content="Random Password generator"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./favicon/favicon-16x16.png"
+		/>
+		<link
+			rel="manifest"
+			href="./favicon/site.webmanifest"
+		/>
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+	</head>
+	<body>
+        <div class="container">
+            <h2>Password Generator</h2>
+            <div class="wrapper">
+                <div class="input-box">
+                    <input type="text" value="asdfghjkl;qeoirpuq" disabled>
+                    <span class="material-symbols-rounded">copy_all</span>
+                </div>
+                <div class="pass-indicator"></div>
+                <div class="pass-length">
+                    <div class="details">
+                        <label class="title">Password Length</label>
+                        <span>15</span>
+                    </div>
+                    <input type="range" min="8" max="30" step="1" value="15">
+                </div>
+                <div class="pass-settings">
+                    <label class="title">Password Settings</label>
+                    <ul class="options">
+                        <li class="option">
+                            <input type="checkbox" id="lowercase">
+                            <label for="lowercase">Lowercase (a-z)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="uppercase">
+                            <label for="uppercase">Uppercase (A-Z)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="numbers">
+                            <label for="numbers">Numbers (0-9)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="symbols">
+                            <label for="symbols">Symbols (!@£$%^&*)</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="esc-duplicate">
+                            <label for="esc-duplicate">Exclude Duplicates</label>
+                        </li>
+                        <li class="option">
+                            <input type="checkbox" id="spaces">
+                            <label for="spaces">Include Spaces</label>
+                        </li>
+                    </ul>
+                </div>
+                <button class="generate-btn">Generate Password</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
